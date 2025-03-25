@@ -1,0 +1,35 @@
+---
+import "./src/styles/global.css";
+import Footer from "@c/Footer.astro";
+import Header from "@c/Header.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | cbrueggenolte.de</title>
+  </head>
+  <body class="bg-zinc-100 text-slate-800">
+    <div class="container max-w-2xl mx-auto px-4 pt-4">
+      <Header />
+
+      <main class="mt-8">
+        <slot />
+      </main>
+
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+</style>

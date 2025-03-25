@@ -1,0 +1,45 @@
+---
+const menu = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "About", href: "/about" },
+  { name: "Bookmarks", href: "/bookmarks" },
+  { name: "Now", href: "/now" },
+  { name: "Uses", href: "/uses" },
+  { name: "Manual of Me", href: "/manual-of-me" },
+  { name: "Politics", href: "/politics" },
+  { name: "Contact", href: "/contact" },
+];
+
+const activePage = Astro.url.pathname;
+---
+
+<header class="flex flex-wrap items-center gap-4 justify-between">
+  <div class="text-3xl font-bold tracking-tighter">
+    <a
+      href="/"
+      target="_self"
+      class="border-b-4 inline-block transition-colors duration-300 transition border-orange-600 w-min hover:border-slate-800 hover:text-orange-600"
+      >cb.</a
+    >
+  </div>
+
+  <nav class="text-orange-600">
+    <ul class="flex flex-wrap gap-1">
+      {
+        menu.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              target="_self"
+              class={`${activePage === item.href ? "text-slate-800 underline font-semibold" : ""} hover:underline px-2`}
+            >
+              {item.name}
+            </a>
+            {item !== menu[menu.length - 1] ? "|" : ""}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

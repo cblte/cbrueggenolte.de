@@ -24,16 +24,15 @@ const activePage = Astro.url.pathname;
     >
   </div>
 
-  <nav class="text-orange-600">
-    <ul class="flex flex-wrap gap-1">
+  <nav class="text-orange-600 -ml-1.5 -mr-1.5">
+    <ul class="flex flex-wrap text-[1.25rem]">
       {
         menu.map((item) => (
-          <li>
+          <li class="inline-block">
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? "text-slate-800 underline font-semibold" : ""} hover:underline px-2`}
-            >
+              class={`${activePage === item.href ? "text-slate-800 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1`}>
               {item.name}
             </a>
             {item !== menu[menu.length - 1] ? "|" : ""}

@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+
+const posts = await getCollection("posts");
+
+// Date formatting function
+const formatDate = (dateString: string): string => {
+  if (!dateString) return "";
+
+  const date = new Date(dateString);
+  return `${date.getDate()}. ${date.toLocaleString("en-US", { month: "short" })}. ${date.getFullYear()}`;
+};
+---
+
+<Layout title="Blog">
+  <h1 class="text-4xl font-extrabold mb-8">Blog Posts</h1>
+
+  <ul class="list-inside list-none">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            class="underline text-orange-600 hover:text-orange-600"
+            href={`/blog/${post.id}`}>
+            <h2 class="">{post.data.title}</h2>
+          </a>
+
+          <span class="text-sm text-slate-500">
+            Mod: {formatDate(post.data.modDate)} | Pub:{" "}
+            {formatDate(post.data.pubDate)} |
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

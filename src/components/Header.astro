@@ -1,13 +1,14 @@
 ---
 const menu = [
   { name: "Home", href: "/" },
-  { name: "Blog", href: "/blog" },
   { name: "About", href: "/about" },
-  { name: "Bookmarks", href: "/bookmarks" },
   { name: "Now", href: "/now" },
-  { name: "Uses", href: "/uses" },
-  { name: "Manual of Me", href: "/manual-of-me" },
+  { name: "Blog", href: "/blog" },
   { name: "Politics", href: "/politics" },
+  { name: "Manual of Me", href: "/manual-of-me" },
+  { name: "Uses", href: "/uses" },
+  { name: "Bookmarks", href: "/bookmarks" },
+  { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -15,24 +16,25 @@ const activePage = Astro.url.pathname;
 ---
 
 <header class="flex flex-wrap items-center gap-4 justify-between">
-  <div class="text-3xl font-bold tracking-tighter">
+  <div class="text-3xl/7 font-bold -tracking-[3px]">
     <a
       href="/"
       target="_self"
-      class="border-b-4 inline-block transition-colors duration-300 transition border-orange-600 w-min hover:border-slate-800 hover:text-orange-600"
-      >cb.</a
+      class="inline-block w-min border-b-3 border-orange-600 pr-2.5 pl-2 transition transition-colors duration-300 hover:border-slate-800 hover:text-orange-600"
+      >CB</a
     >
   </div>
 
-  <nav class="text-orange-600 -ml-1.5 -mr-1.5">
-    <ul class="flex flex-wrap text-[1.25rem]">
+  <nav class="">
+    <ul class="flex flex-wrap text-[1.25rem] -mr-2 -ml-2">
       {
         menu.map((item) => (
           <li class="inline-block">
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? "text-slate-800 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1`}>
+              class={`${activePage === item.href ? "text-slate-800 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1 text-orange-600`}
+            >
               {item.name}
             </a>
             {item !== menu[menu.length - 1] ? "|" : ""}

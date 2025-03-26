@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/MDPage.astro"
-title: "/now"
+title: "Now"
 ---
 
 This is my [/now](https://nownownow.com) page and is something I got inspired

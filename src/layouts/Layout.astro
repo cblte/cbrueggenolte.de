@@ -28,8 +28,12 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-  h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
+  main a {
+    color: var(--color-orange-500);
+    text-decoration: underline;
+  }
+  main a:hover {
+    background-color: var(--color-orange-500);
+    color: var(--color-zinc-100);
   }
 </style>

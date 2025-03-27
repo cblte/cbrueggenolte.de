@@ -8,6 +8,7 @@ const posts = defineCollection({
     pubDate: z.date(),
     modDate: z.date().optional(),
     description: z.string().optional(),
+    tags: z.array(z.string()).optional(),
     cover: z.string().optional(),
   }),
 });

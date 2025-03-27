@@ -4,8 +4,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <div class="prose">
+  <section id="pageContent" class="prose">
     <h1>{frontmatter.title}</h1>
     <slot />
-  </div>
+  </section>
 </Layout>

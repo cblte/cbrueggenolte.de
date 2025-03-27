@@ -1,11 +1,25 @@
 ---
 import { getCollection, render } from "astro:content";
+
 import Layout from "@layouts/Layout.astro";
+import PostMetaData from "@c/PostMetaData.astro";
+
+export function createSlug(title: string) {
+  // Create a slug from the title
+  const slug = title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
+    .trim()
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
+
+  return slug;
+}
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
   return posts.map((post) => ({
-    params: { slug: post.id },
+    params: { slug: createSlug(post.data.title) },
     props: { post },
   }));
 }
@@ -14,6 +28,10 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout frontmatter={post.data}>
-  <Content />
+<Layout title={post.data.title}>
+  <section id="content" class="prose">
+    <h1>{post.data.title}</h1>
+    <PostMetaData post={post} />
+    <Content />
+  </section>
 </Layout>

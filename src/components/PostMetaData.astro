@@ -1,0 +1,27 @@
+---
+// Date formatting function
+const formatDate = (dateString: string): string => {
+  if (!dateString) return "";
+
+  const date = new Date(dateString);
+  return `${date.getDate()}. ${date.toLocaleString("en-US", { month: "short" })}. ${date.getFullYear()}`;
+};
+
+const { post } = Astro.props;
+---
+
+<span class="text-sm text-slate-500">
+  Mod: {formatDate(post.data.modDate)} | Pub:{" "}
+  {formatDate(post.data.pubDate)} | Tags: {" "}
+  {
+    post.data.tags
+      ? post.data.tags
+          .map((tag: string) => (
+            <>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </>
+          ))
+          .reduce((prev: string, curr: string) => [prev, ", ", curr])
+      : "No tags"
+  }
+</span>

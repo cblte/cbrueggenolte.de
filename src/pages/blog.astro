@@ -1,37 +1,46 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
+import PostMetaData from "@c/PostMetaData.astro";
 
 const posts = await getCollection("posts");
 
-// Date formatting function
-const formatDate = (dateString: string): string => {
-  if (!dateString) return "";
+// Function to create a slug from the title
+function createSlug(title: string) {
+  // Create a slug from the title
+  const slug = title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
+    .trim()
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
 
-  const date = new Date(dateString);
-  return `${date.getDate()}. ${date.toLocaleString("en-US", { month: "short" })}. ${date.getFullYear()}`;
-};
+  return slug;
+}
 ---
 
 <Layout title="Blog">
-  <h1 class="text-4xl font-extrabold mb-8">Blog Posts</h1>
+  <section id="blogPosts">
+    <h1 class="text-4xl font-extrabold">Everything is a blog post.</h1>
 
-  <ul class="list-inside list-none">
-    {
-      posts.map((post) => (
-        <li>
-          <a
-            class="underline text-orange-600 hover:text-orange-600"
-            href={`/blog/${post.id}`}>
-            <h2 class="">{post.data.title}</h2>
-          </a>
+    <p class="text-2xl">
+      I write about what interests, inspires, impresses and informs me.
+    </p>
 
-          <span class="text-sm text-slate-500">
-            Mod: {formatDate(post.data.modDate)} | Pub:{" "}
-            {formatDate(post.data.pubDate)} |
-          </span>
-        </li>
-      ))
-    }
-  </ul>
+    <ul class="list-none mt-8">
+      {
+        posts.map((post) => (
+          <li>
+            <h2 class="">
+              <a href={`/blog/${createSlug(post.data.title)}`}>
+                {post.data.title}
+              </a>
+            </h2>
+            {post.data.description && <p>{post.data.description}</p>}
+            <PostMetaData post={post} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>

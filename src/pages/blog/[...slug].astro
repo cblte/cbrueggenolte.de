@@ -2,19 +2,8 @@
 import { getCollection, render } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
-import PostMetaData from "@c/PostMetaData.astro";
-
-export function createSlug(title: string) {
-  // Create a slug from the title
-  const slug = title
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
-    .trim()
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
-
-  return slug;
-}
+import PostMetaData from "@components/PostMetaData.astro";
+import { createSlug } from "@utils/utils";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");

@@ -3,8 +3,6 @@ layout: "@layouts/MDPage.astro"
 title: "About"
 ---
 
-# About
-
 Hello! I’m Carsten, and welcome to my personal corner of the internet.
 
 This website has changed a lot over the years, and right now, it's basically a

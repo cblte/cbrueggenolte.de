@@ -4,9 +4,9 @@ pubDate: 2025-03-26
 modDate: 2025-03-26
 description: We have a new air fryer and it is amazing!
 tags: ["airfryer", "kitchen", "cooking"]
-image: /images/posts/2025-03-26-new-airfryer.jpg
-imageAlt: A picture of the Ninja 12-in-1 Combi Cooker
 ---
+
+![Ninja 12-in-1 Combi Cooker](./2025-03-26-cover.jpg "Ninja 12-in-1 Combi Cooker")
 
 Yesterday, I went to a friend's place to chat about his home lab and network
 setup. I found out he's got a Ninja Air Fryer. They're pretty cool, and you can

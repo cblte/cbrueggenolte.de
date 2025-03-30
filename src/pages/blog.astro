@@ -3,7 +3,12 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import PostMetaData from "@components/PostMetaData.astro";
 
-const posts = await getCollection("posts");
+let posts = await getCollection("posts");
+// Sort posts by publication date
+posts = posts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
 
 // Function to create a slug from the title
 function createSlug(title: string) {
@@ -30,7 +35,7 @@ function createSlug(title: string) {
     <ul class="list-none mt-8">
       {
         posts.map((post) => (
-          <li>
+          <li class="mb-8">
             <h2 class="">
               <a href={`/blog/${createSlug(post.data.title)}`}>
                 {post.data.title}

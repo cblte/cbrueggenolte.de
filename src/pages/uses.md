@@ -4,6 +4,11 @@ title: "Uses"
 date:: 2023-03-30
 ---
 
+This is my [/uses](https://uses.tech) page which I got inspired by [Wes
+Bos uses](https://wesbos.com/uses/) page, whose resource I found incredibly
+helpful.
+
+**Last updated on 30th March 2025.**
 
 ## Sharing my Setup and Tools I use
 
@@ -12,12 +17,8 @@ document my own journey. I love learning Learning about others' setups which may
 inspire me to cherry-pick for my own toolbox.  While I enjoy exploring new
 tools, I've come to value stability over novelty.
 
-Inspired by [Wes Bos](https://wesbos.com/uses/) and his
-[uses.tech](https://uses.tech/) website, whose resource I found incredibly
-helpful, here's a straightforward list of what I use daily for work, home, and
+Here's a straightforward list of what I use daily for work, home, and
 everything in between.
-
-**Last updated on 30th March 2025.**
 
 ## 🖥 Hardware
 
@@ -37,16 +38,18 @@ over time.
 
 * **MacBook Air 2025 (15.3-inch, M4, 32 GB RAM)** - My new primary workstation,
   offering exceptional battery life, silent fanless operation, and enough power
-  to handle demanding developemtn tasks with ease.
+  to handle demanding development tasks with ease.
 * **Logitech Anywhere MX** - Versatile travel mouse with seamless three-device
-  connectivity.
-* **LG 32GK650F** - Premium 32" QHD display with versatile inputs for all your
+  connectivity. Wish it was a little bit bigger.
+* **Ugreen 7-in-1 USB-C Adapter** - Compact and reliable USB-C hub for
+  connecting peripherals to my MacBook Air.
+* **LG 32GK650F** - Premium 32" QHD display with versatile inputs for all my
   devices.
-* **Minisforum i5** - Compact powerhouse running Proxmox, Nextcloud, and game
-  servers effortlessly.
+* **Minisforum i5** - Compact mini pc running Proxmox, Nextcloud, and some small
+ services effortlessly.
 * **ASUSTOR AS6702T** - Feature-rich NAS handling Docker services, archives, and
   system backups.
-* **Synology DS215j** - Reliable offline storage solution for email archives and
+* **Synology DS215j** - Old but reliable offline storage solution for email archives and
   temporary data.
 
 * **retired:** MacBook Pro (14-inch, M1 Pro) - A powerful workstation with exceptional
@@ -159,10 +162,13 @@ and organized across different devices and environments.
 * [TiddlyWiki](https://tiddlywiki.com) - Versatile knowledge system serving as
   both my personal task manager and comprehensive work journal across all
   environments.
-* [One Sec](https://one-sec.app/) - Effective intervention tool breaking the
-  automatic social media habit and reducing mindless scrolling behavior.
+* [One Sec Browser Extension](https://one-sec.app/browser-extension/) -
+  Effective intervention tool breaking the automatic social media habit and
+  reducing mindless scrolling behavior.
 * [Raycast](https://raycast.com/) - Powerful command center replacing Spotlight
   with customizable extensions and workflows.
+* [Rectangle](https://rectangleapp.com/) - Essential window management tool
+  enhancing productivity by simplifying window organization and navigation.
 
 ### Creating
 

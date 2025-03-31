@@ -1,19 +1,28 @@
 ---
 import Layout from "./Layout.astro";
+import { formatDate } from "@utils/utils";
+
 const { frontmatter, headings } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <section id="pageContent" class="prose">
-    <h1>{frontmatter.title}</h1>
+  <section
+    id="pageContent"
+    class="prose prose-h2:mb-2 prose-h3:mb-2 prose-p:mb-5 prose-p:mt-0">
+    <header class="mb-6">
+      <h1 class="mb-1">{frontmatter.title}</h1>
+      <div class="text-md text-slate-500">
+        {frontmatter.date && formatDate(frontmatter.date)}
+      </div>
+    </header>
 
     {
       frontmatter.toc == true && headings.length > 0 && (
-        <div id="toc" class="sticky -top-1  pt-2 pb-2">
-          <span class="font-medium">Table Of Contents</span>
-          <ul class="flex flex-row gap-1 not-prose flex-wrap">
-            {headings.map((heading) => (
-              <li class="toc-item" key={heading.slug}>
+        <div id="toc" class="sticky -top-1 pt-2 mb-6">
+          <div class="font-medium text-lg mb-2">Table Of Contents</div>
+          <ul class="flex flex-row gap-2 not-prose flex-wrap">
+            {headings.map((heading: { slug: string; text: string }) => (
+              <li class="toc-item">
                 <a href={`#${heading.slug}`} class="anchor-link">
                   {heading.text}
                 </a>
@@ -28,30 +37,30 @@ const { frontmatter, headings } = Astro.props;
 </Layout>
 
 <script>
-  // Add observer for TOC stickiness
-  const tocElement = document.getElementById("toc");
-  const stickyObserver = new IntersectionObserver(
-    ([e]) => e.target.classList.toggle("is-sticky", e.intersectionRatio < 1),
-    { threshold: [1] }
-  );
-
-  stickyObserver.observe(tocElement);
-
   // Function to update scroll margin based on TOC height
   function updateScrollMargin() {
-    const tocHeight = tocElement.offsetHeight;
+    const tocHeight = tocElement ? tocElement.offsetHeight : 0;
     const headings = document.querySelectorAll("h2, h3");
     headings.forEach((heading) => {
-      heading.style.scrollMarginTop = `${tocHeight + 16}px`; // adding 16px padding
+      (heading as HTMLElement).style.scrollMarginTop = `${tocHeight + 16}px`; // adding 16px padding
     });
   }
 
-  // Initial setup
-  stickyObserver.observe(tocElement);
-  updateScrollMargin();
+  // Add observer for TOC stickiness
+  const tocElement = document.getElementById("toc");
 
-  // Update on window resize
-  window.addEventListener("resize", updateScrollMargin);
+  // Initial setup
+  if (tocElement) {
+    const stickyObserver = new IntersectionObserver(
+      ([e]) => e.target.classList.toggle("is-sticky", e.intersectionRatio < 1),
+      { threshold: [1] }
+    );
+
+    stickyObserver.observe(tocElement);
+    updateScrollMargin();
+    // Update on window resize
+    window.addEventListener("resize", updateScrollMargin);
+  }
 </script>
 
 <style is:inline>

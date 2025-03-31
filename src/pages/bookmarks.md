@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Bookmarks"
-modDate: 2025-03-31
+date: 2025-03-31
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Uses"
-date:: 2023-03-30
+date: 2025-03-31
 ---
 
 This is my [/uses](https://uses.tech) page which I got inspired by [Wes

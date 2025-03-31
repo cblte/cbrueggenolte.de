@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Manual Of Me"
+date: 2025-03-31
 ---
 
 ## Introduction & Caveats

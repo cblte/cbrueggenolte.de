@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Politics"
+date: 2025-03-31
 ---
 
 Hello friends, family, and colleagues,

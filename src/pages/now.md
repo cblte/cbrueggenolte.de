@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Now"
+date: 2025-03-31
 ---
 
 This is my [/now](https://nownownow.com) page and is something I got inspired

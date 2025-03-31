@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "About"
+date: 2025-03-31
 ---
 
 Hello! I'm Carsten, and welcome to my personal corner of the internet.
@@ -33,75 +34,48 @@ Feel free to explore,
 and don't hesitate to [reach out](/contact) if you have questions
 or just want to say hi!
 
-### 💻 IT Background
+## 💻 My IT Journey
 
-My journey into the world of information technology began during my teenage years
+My journey into information technology began during my teenage years
 when I acquired my first computer—
 an [Intel 80286](https://en.wikipedia.org/wiki/Intel_80286)
 running [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS).
 Given how slowly games loaded back then,
 patience became my first debugging skill.
+I quickly became fascinated with technology,
+spending countless hours tinkering with hardware and software.
 
-As the internet evolved,
-I was happy to explore new emerging technologies,
-progressing from the charm of dial-up melodies and ISDN
-to today's lightning-fast Fiber to the Home (FTTH).
-Honeslty, though,
-I'd be lying if I said
-I genuinely miss waiting five minutes for a single image to download.
-
-My first websites were built using basic HTML and CSS
-(thankfully, these early masterpieces have been lost to time and broken links).
-Over time, I expanded into server-side scripting with PHP,
-then dove deeper into Java and Python.
+My first websites used basic HTML and CSS,
+before expanding into server-side scripting with PHP,
+then Java and Python.
 Today, I use modern frameworks like Astro, Flask and Java Spring,
-continually amazed by how much the tools have evolved—
-while I've remained, more or less, the same geeky kid.
+continually amazed by how much the tools have evolved.
+After my time at the "Gymnasium,"
+I transitioned to a technical college
+where I earned the title "Information Technology Assistant."
+This prepared me for professional roles
+in software development and network management.
 
-Facing challenges at the ‘Gymnasium'—
-especially Latin grammar—
-I wisely transitioned to a technical college
-to pursue specialized education aligned with my passion.
-There, I earned the fancy-sounding title "Information Technology Assistant,"
-which basically meant I could officially fix family members' computers.
-Surprisingly,
-it also prepared me for professional roles
-involving software development and network management.
-
-Reflecting on these experiences,
-I recognize how each phase—
-from early experimentation to formal education—
-has shaped my professional approach.
-They have instilled adaptability,
-and deepened my appreciation for the transformative power of technology.
-And yet, sometime, I still forget to charge my wireless mouse.
-
-### 🚀 Today
-
-Building on my early passion and formal education in IT,
-I've cultivated a career that continues to evolve dynamically.
 Currently,
 I work primarily as a Java developer
-and part-time DevSecOps
-in the defense industry,
-though I frequently experiment with a variety of other programming languages and technologies.
+and part-time DevSecOps specialist,
+exploring a variety of programming languages and technologies.
 At home, I maintain a small-but-growing homelab,
 mostly as an elaborate justification for having too many servers and blinking lights.
-
-Over the years,
 I've gained hands-on experience with
 Linux, macOS, Windows administration,
-Docker, Kubernets, container orchestration
+Docker, Kubernetes, container orchestration,
 Java, Python, JavaScript/TypeScript, HTML, and CSS
 —though I still occasionally Google "[how to center a div](https://www.yout-ube.com/watch?v=kphds-1V9o8)".
-Curious about the specific tools and tech I swaer by (or ocassionally at)?
+
+Curious about the specific tools and tech I swear by?
 Check out my [uses](/uses) or [bookmarks](/bookmarks) pages.
 
-Outside the world of tech,
-you'll probably find me gaming on my Switch or PC (_Factorio_ remains a personal favorite).
-I also love listening to podcasts, audiobooks, and radio plays—
-perfect for drowning out server fans.
-And while I proudly identify as an Apple enthusiast,
+When not immersed in technology,
+you'll find me gaming on my Switch
+or on the PC (_Factorio_ remains a favorite),
+or listening to podcasts, audiobooks, and radio plays.
+And while I proudly identify as an Apple enthusiast
 I'm deeply passionate about open-source software—
 yes, some contradictions make perfect sense.
 

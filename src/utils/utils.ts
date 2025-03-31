@@ -1,4 +1,13 @@
-export function createSlug(title: string) {
+
+// Date formatting function
+export function formatDate(dateString: string): string {
+    if (!dateString) return "";
+
+    const date = new Date(dateString);
+    return `${date.getDate()}. ${date.toLocaleString("en-US", { month: "short" })}. ${date.getFullYear()}`;
+};
+
+export function createSlug(title: string): string {
     // Create a slug from the title
     const slug = title
         .toLowerCase()

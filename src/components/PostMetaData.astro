@@ -1,11 +1,5 @@
 ---
-// Date formatting function
-const formatDate = (dateString: string): string => {
-  if (!dateString) return "";
-
-  const date = new Date(dateString);
-  return `${date.getDate()}. ${date.toLocaleString("en-US", { month: "short" })}. ${date.getFullYear()}`;
-};
+import { formatDate } from "@utils/utils";
 
 const { post } = Astro.props;
 ---

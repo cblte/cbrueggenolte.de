@@ -3,106 +3,136 @@ layout: "@layouts/MDPage.astro"
 title: "About"
 ---
 
-Hello! I’m Carsten, and welcome to my personal corner of the internet.
+Hello! I'm Carsten, and welcome to my personal corner of the internet.
 
 This website has evolved over the years.
-Today, it's a space where I share my thoughts, notes, and ideas on topics I'm passionate about.
-I hope you'll find something useful or inspiring here!
+Today, it's a space where I transparently share my thoughts, notes, and ideas on topics I'm passionate about.
+I firmly believe in open, direct communication
+(no beating aruond the bushes),
+so expect honesty—
+and maybe an occasional typo
 
 ## 👋 About Me
 
-I was born around 336ppm in North Rhine-Westphalia, Germany.
-Growing up in a small village with friends,
-nature and learning early on that milk doesn't come from the supermarkt.
+I was born around 336ppm (CO₂ concentration in the atmosphere),
+in North Rhine-Westphalia, Germany.
+Growing up in a small village,
+surrounded by friends and nature taught me valuable life lessons—
+like knowing milk doesn't actually originate from supermarket shelves.
 
-Currently,
+These days,
 I live in the beautiful city of The Hague in the Netherlands
-with my wonderful wife. 😊
+with my wonderful wife Sarah,
+who graciously tolerates my collection of cables,
+adapters,
+and questionable tech purchases 😊.
+
+I hope you'll find something useful or inspiring here—
+and maybe even chuckle at my occasional dry humor.
+Feel free to explore,
+and don't hesitate to [reach out](/contact) if you have questions
+or just want to say hi!
 
 ### 💻 IT Background
 
 My journey into the world of information technology began during my teenage years
-when I acquired my first computer—an [Intel 80286](https://en.wikipedia.org/wiki/Intel_80286)
+when I acquired my first computer—
+an [Intel 80286](https://en.wikipedia.org/wiki/Intel_80286)
 running [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS).
-This early exposure ignited a passion for computing
-and set the foundation for my future endeavors.
+Given how slowly games loaded back then,
+patience became my first debugging skill.
 
-As the internet evolved, I explored various connectivity technologies,
-progressing from ISDN and DSL to today's Fiber to the Home (FTTH).
-This early and ongoing exposure allowed me to engage with the World Wide Web from its inception.
-I began creating websites using basic HTML and CSS,
-incorporating PHP for server-side functionality.
-Over time, I expanded my skill set to include Java and Python,
-and currently, I utilize modern frameworks such as Astro and Java Spring.
-This continuous learning journey has not only kept me abreast of technological advancements
-but has also deepened my understanding of networking infrastructures.
+As the internet evolved,
+I was happy to explore new emerging technologies,
+progressing from the charm of dial-up melodies and ISDN
+to today's lightning-fast Fiber to the Home (FTTH).
+Honeslty, though,
+I'd be lying if I said
+I genuinely miss waiting five minutes for a single image to download.
 
-Facing challenges at the 'Gymnasium' and driven by a growing passion for information technology,
-I chose to transition to a technical college to pursue specialized education
-aligned with my career aspirations.
-There, I earned the designation of an "Information Technology Assistant,"
-a comprehensive program that equipped me with the expertise to design, plan,
-and implement computer systems and networks,
-as well as develop software solutions tailored to diverse needs.
+My first websites were built using basic HTML and CSS
+(thankfully, these early masterpieces have been lost to time and broken links).
+Over time, I expanded into server-side scripting with PHP,
+then dove deeper into Java and Python.
+Today, I use modern frameworks like Astro, Flask and Java Spring,
+continually amazed by how much the tools have evolved—
+while I've remained, more or less, the same geeky kid.
+
+Facing challenges at the ‘Gymnasium'—
+especially Latin grammar—
+I wisely transitioned to a technical college
+to pursue specialized education aligned with my passion.
+There, I earned the fancy-sounding title "Information Technology Assistant,"
+which basically meant I could officially fix family members' computers.
+Surprisingly,
+it also prepared me for professional roles
+involving software development and network management.
 
 Reflecting on these experiences,
-I recognize how each phase—from early experimentation to formal education—
-has shaped my professional approach,
-instilling in me a problem-solving mindset, adaptability,
-and a deep appreciation for the transformative power of technology.
+I recognize how each phase—
+from early experimentation to formal education—
+has shaped my professional approach.
+They have instilled adaptability,
+and deepened my appreciation for the transformative power of technology.
+And yet, sometime, I still forget to charge my wireless mouse.
 
 ### 🚀 Today
 
-Building upon my foundational experiences and formal education in IT,
-I have cultivated a dynamic and evolving career.
+Building on my early passion and formal education in IT,
+I've cultivated a career that continues to evolve dynamically.
 Currently,
-I work primarily in the defense industry specializing in Java development,
-though I frequently experiment with other programming languages.
-I also enjoy setting up and maintaining various projects and services in my homelab.
+I work primarily as a Java developer
+and part-time DevSecOps
+in the defense industry,
+though I frequently experiment with a variety of other programming languages and technologies.
+At home, I maintain a small-but-growing homelab,
+mostly as an elaborate justification for having too many servers and blinking lights.
+
 Over the years,
-I have gained experience with systems spanning Linux and Windows administration,
-Docker and Kubernetes,
-Java,
-Python,
-JavaScript/TypeScript,
-HTML,
-and CSS.
-I am continually expanding my knowledge
-and am familiar with a variety of tools to accomplish tasks.
+I've gained hands-on experience with
+Linux, macOS, Windows administration,
+Docker, Kubernets, container orchestration
+Java, Python, JavaScript/TypeScript, HTML, and CSS
+—though I still occasionally Google "[how to center a div](https://www.yout-ube.com/watch?v=kphds-1V9o8)".
+Curious about the specific tools and tech I swaer by (or ocassionally at)?
+Check out my [uses](/uses) or [bookmarks](/bookmarks) pages.
 
-If you're looking for a specific tool for a particular task,
-feel free to check out my [uses](/uses) or [bookmarks](/bookmarks) pages.
-
-When I'm not working,
-you'll likely find me gaming on my Switch or PC (_Factorio_ remains a personal favorite).
-I also love listening to podcasts, audiobooks, and radio plays.
-While I proudly identify as an Apple enthusiast,
-I'm also deeply passionate about open-source software.
+Outside the world of tech,
+you'll probably find me gaming on my Switch or PC (_Factorio_ remains a personal favorite).
+I also love listening to podcasts, audiobooks, and radio plays—
+perfect for drowning out server fans.
+And while I proudly identify as an Apple enthusiast,
+I'm deeply passionate about open-source software—
+yes, some contradictions make perfect sense.
 
 ## 🛠️ My Projects and Home Lab Services
 
-Here are some of the projects and services
-I run for myself, my family, and friends.
-I'm always happy to exchange ideas or collaborate,
-so feel free to reach out!
+Below are some of the projects and services
+I host for myself, my family, and friends—
+partly because I love technology,
+partly to justify purchasing yet another Raspberry Pi.
+If something is of interest to you
+or you're curious how many backup solutions constitute "too many",
+feel free to reach out!
 
-- [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)
-- [AudioBookShelf](https://www.audiobookshelf.org/)
-- [Bitwarden](https://bitwarden.com/)/[Vaultwarden](https://github.com/dani-garcia/vaultwarden)
-- [Forgejo](https://forgejo.org/)
-- [Jellyfin](https://jellyfin.org/)
-- [Nextcloud](https://nextcloud.com/)
-- [nginx Proxy Manager](https://nginxproxymanager.com/)
-- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)
-- Minecraft server via [MineKube](https://connect.minekube.com/)
-- NAS for backups and file sharing
+- [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) – Keeping the internet tidy (you're welcome, Mom!).
+- [AudioBookShelf](https://www.audiobookshelf.org/) – Enjoying books without turning pages. Revolutionary!
+- [Bitwarden](https://bitwarden.com/)/[Vaultwarden](https://github.com/dani-garcia/vaultwarden) – Because "password123" was never a good idea.
+- [Forgejo](https://forgejo.org/) – My own Git service: like GitHub, but more introverted.
+- [Jellyfin](https://jellyfin.org/) – Streaming without subscription fatigue.
+- [Nextcloud](https://nextcloud.com/) – Personal cloud storage, rain or shine.
+- [nginx Proxy Manager](https://nginxproxymanager.com/) – Directing web traffic without yelling at browsers.
+- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) – PDFs simplified (finally!).
+- Minecraft server via [MineKube](https://connect.minekube.com/) – Because adulting is overrated.
+- NAS – Reliable backups (until I accidentally delete them again).
 
 ## 📰 RSS Feeds
 
-As I continue to develop this page
-and plan to add more content in the coming weeks,
-you might be interested in subscribing to my RSS feed to stay updated.
-Simply click the link below to add it to your preferred RSS reader:
+I'll be regularly adding fresh (and old) content.
+If you'd like to stay updated
+without constantly refreshing your browser
+(no judgment if that's your thing),
+feel free to subscribe to my RSS feed below:
 
 [Subscribe to my RSS feed](/rss.xml)
 
@@ -110,9 +140,9 @@ Simply click the link below to add it to your preferred RSS reader:
 
 ## 📫 Get in Touch
 
-If you'd like to get in touch—
-whether to discuss technology,
-share ideas,
-or simply say hello—
-please visit my [Contact page](/contact).
+Want to discuss technology,
+trade bad jokes,
+or simple say hello?
 I'd love to hear from you!
+Head over to my [Contact page](/contact),
+and let's connect.

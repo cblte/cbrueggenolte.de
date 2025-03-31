@@ -1,6 +1,5 @@
 ---
 import { getCollection, render } from "astro:content";
-import { Image } from "astro:assets";
 
 import Layout from "@layouts/Layout.astro";
 import PostMetaData from "@components/PostMetaData.astro";
@@ -19,17 +18,19 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout title={post.data.title}>
-  <section id="content" class="prose">
+<Layout title={post.data.title} postdata={post.data}>
+  <section
+    id="content"
+    class="prose dark:prose-invert prose-p:text-lg prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 prose-p:mb-5 prose-p:mt-0">
     <h1>{post.data.title}</h1>
     <PostMetaData post={post} />
     <Content />
   </section>
-</Layout>
 
-<style>
-  :global(img) {
-    border: 1px solid var(--color-zinc-200);
-    border-radius: 0.5rem;
-  }
-</style>
+  <style>
+    :global(img) {
+      border: 1px solid var(--color-zinc-200);
+      border-radius: 0.5rem;
+    }
+  </style>
+</Layout>

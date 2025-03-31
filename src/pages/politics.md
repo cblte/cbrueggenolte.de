@@ -4,6 +4,8 @@ title: "Politics"
 date: 2025-03-31
 ---
 
+![Politics Cover](/public/politics-cover.jpg)
+
 Hello friends, family, and colleagues,
 
 I've often heard it's harsh to judge someone by their politics, but through my own experiences, I've learned politics isn’t just abstract—it’s personal. Politics directly affects real lives, real freedoms, and the kind of society we build for ourselves and future generations. Supporting political figures or movements that are racist, bigoted, or undermine basic human rights isn’t merely about differences in opinion. It reveals what values we accept and what injustices we tolerate.
@@ -43,3 +45,5 @@ Carsten
 ---
 
 Interested in sources and more context behind these reflections? Check out my blog post [Sources Behind My Political Reflections](/blog/sources-behind-my-political-reflections).
+
+Cover Image: "<a href="https://ccnull.de/foto/demokratie-graffiti-auf-einer-farbenfrohen-wand/1100087" target="_blank">Demokratie-Graffiti auf einer farbenfrohen Wand</a>" von <a href="https://ccnull.de/fotograf/marco-verch-1" target="_blank">Marco Verch 👨‍🍳</a> via <a href="https://ccnull.de" target="_blank">ccnull.de</a>, <a href="https://creativecommons.org/licenses/by/2.0/de/" target="_blank">CC-BY 2.0</a>

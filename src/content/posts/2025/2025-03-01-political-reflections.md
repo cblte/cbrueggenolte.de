@@ -6,9 +6,16 @@ modDate: 2025-03-31
 tags: ["politics", "trump", "elections", "noafd"]
 ---
 
+This companion post provides references
+and sources supporting my reflections
+and claims shared on my Politics page,
+offering deeper insights and factual context.
+
 Below you'll find references
 that support and provide further context
 to the reflections and claims I shared on my Politics page.
+
+![Politics Cover](/public/politics-cover.jpg)
 
 If you have additional sources I havn't yet listed,
 [please let me know](/contact)
@@ -61,3 +68,5 @@ and I will add them here.
   raising concerns about its influence in security and intelligence oversight.
 
 These references provide factual support for my observations and concerns expressed in my [Politics page](/politics).
+
+Cover Image: "<a href="https://ccnull.de/foto/demokratie-graffiti-auf-einer-farbenfrohen-wand/1100087" target="_blank">Demokratie-Graffiti auf einer farbenfrohen Wand</a>" von <a href="https://ccnull.de/fotograf/marco-verch-1" target="_blank">Marco Verch 👨‍🍳</a> via <a href="https://ccnull.de" target="_blank">ccnull.de</a>, <a href="https://creativecommons.org/licenses/by/2.0/de/" target="_blank">CC-BY 2.0</a>

@@ -1,30 +1,13 @@
 # cbrueggenolte.de - version 2025
 
-Common colors:
 
-- link: `text-orange-500`
-- link navigation hover: `hover:text-orange-500 hover:underline`
-- link navigation active: `text-slate-800 underline`
-- link text: `text-orange-500`
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+Here you find the source-code for my personal site built with [Astro](https://astro.build) -
+an upgrade from my previous Python Flask and Hugo-based implementation.
+I'm currently in the process of migrating and enhancing content from older versions of the site,
+so check back regularly for updates.
+The site showcases my work, projects, and thoughts with a clean, responsive design.
+Feel free to explore what's available now at [cbrueggenolte.de](https://cbrueggenolte.de),
+and watch as more content gets added over time!
 
 ## 🧞 Commands
 
@@ -39,6 +22,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Common colors:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- link: `text-orange-500`
+- link navigation hover: `hover:text-orange-500 hover:underline`
+- link navigation active: `text-slate-800 underline`
+- link text: `text-orange-500`

@@ -1,4 +1,6 @@
 ---
+import ThemeIcon from "@components/ThemeIcon.astro";
+
 const menu = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -16,16 +18,19 @@ const activePage = Astro.url.pathname;
 ---
 
 <header class="flex flex-wrap items-center gap-4 justify-between mb-12">
-  <div class="text-3xl/7 font-bold -tracking-[3px]">
-    <a
-      href="/"
-      target="_self"
-      class="inline-block w-min border-b-3 border-orange-500 pr-2.5 pl-2 transition transition-colors duration-300 hover:border-slate-800 hover:text-orange-500 dark:hover:border-zinc-100"
-      >CB</a
-    >
+  <div
+    class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full">
+    <div class="flex-1">
+      <a
+        href="/"
+        target="_self"
+        class="inline-block w-min border-b-3 border-orange-500 pr-2.5 pl-2 transition transition-colors duration-300 hover:border-slate-800 hover:text-orange-500 dark:hover:border-zinc-100"
+        >CB</a
+      >
+    </div>
+    <div class="flex-1 text-right"><ThemeIcon /></div>
   </div>
-
-  <nav class="">
+  <nav>
     <ul class="flex flex-wrap text-[1.25rem] -mr-2 -ml-2">
       {
         menu.map((item) => (

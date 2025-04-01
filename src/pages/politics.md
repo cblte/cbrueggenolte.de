@@ -4,7 +4,7 @@ title: "Politics"
 date: 2025-03-31
 ---
 
-![Politics Cover](/public/politics-cover.jpg)
+![Politics Cover](/images/politics-cover.jpg)
 
 Hello friends, family, and colleagues,
 

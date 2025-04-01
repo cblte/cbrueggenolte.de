@@ -15,7 +15,7 @@ Below you'll find references
 that support and provide further context
 to the reflections and claims I shared on my Politics page.
 
-![Politics Cover](/public/politics-cover.jpg)
+![Politics Cover](/images/politics-cover.jpg)
 
 If you have additional sources I havn't yet listed,
 [please let me know](/contact)
